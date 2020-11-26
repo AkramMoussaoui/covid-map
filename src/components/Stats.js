@@ -6,7 +6,6 @@ import { VictoryChart, VictoryLine } from "victory";
 
 const Wrapper = styled.div`
   background: #393e46;
-  overflow: hidden;
   color: #ffd369;
   box-sizing: border-box;
   .container {
@@ -52,6 +51,20 @@ const Wrapper = styled.div`
 
   * {
     margin: 0;
+  }
+  @media (max-width: 768px) {
+    height: 100vh;
+    .buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+    .VictoryContainer {
+      margin-top: 3rem;
+      background-color: white;
+    }
+    button {
+      margin-bottom: 2rem;
+    }
   }
 `;
 
